@@ -25,3 +25,10 @@ Console.WriteLine(digOla);
 digOla = digOla.Replace("Olá", "eaÊ");
 Console.WriteLine(digOla);
 
+// ===========================================================
+
+string letraMusica = "Você disse tchau, e eu digo olá";
+Console.WriteLine(letraMusica.Contains("tchau"));
+Console.WriteLine(letraMusica.Contains("saudações"));
+
+
