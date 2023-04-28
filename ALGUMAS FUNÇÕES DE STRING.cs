@@ -15,3 +15,13 @@ Console.WriteLine($"[{apararSaudacao}]");
 apararSaudacao = saudacao.Trim();
 Console.WriteLine($"[{apararSaudacao}]");
 
+// ===========================================================
+
+string digOla = "Olá Mundo!";
+Console.WriteLine(digOla);
+
+// Encontra a primeira palavra descrita e substitui pela segunda
+
+digOla = digOla.Replace("Olá", "eaÊ");
+Console.WriteLine(digOla);
+
