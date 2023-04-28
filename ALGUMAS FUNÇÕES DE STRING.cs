@@ -31,4 +31,16 @@ string letraMusica = "Você disse tchau, e eu digo olá";
 Console.WriteLine(letraMusica.Contains("tchau"));
 Console.WriteLine(letraMusica.Contains("saudações"));
 
+Console.WriteLine(letraMusica.StartWith("tchau"));
+
+bool comecaComVc = letraMusica.StartWith("Você");
+
+Console.WriteLine(comecaComVc);
+
+// onde a palavra inicia
+Console.WriteLine(letraMusica.IndexOf("olá"));
+
+
+
+
 
