@@ -11,16 +11,23 @@ namespace ConsoleApp1
 
             nomes.Add("Diogo");
             nomes.Add("Maria");
+            nomes.Add("Bruna");
+            nomes.Add("Claudio");
+            nomes.Add("Zeus");
             nomes.Add("Ana");
 
             nomes.RemoveAt(nomes.Count - 1);
 
+            nomes.Sort();
             foreach (var nome in nomes)
             {
                 Console.WriteLine($"Olá {nome.ToUpper()}");
             }
-            var index = nomes.IndexOf("Diogo");
-            Console.WriteLine($"Encontrei o Diogo na posição {index} ");
+
+            //var index = nomes.IndexOf("Diogo");
+            //Console.WriteLine($"Encontrei o Diogo na posição {index} ");
+
+
         }
     }
 }
