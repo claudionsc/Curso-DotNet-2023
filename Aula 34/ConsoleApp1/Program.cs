@@ -7,25 +7,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var nomes = new List<string> { "<nome>", "Ana", "Felipe" };
+            var numerosFibo = new List<int> { 1, 1 };
 
-            nomes.Add("Diogo");
-            nomes.Add("Maria");
-            nomes.Add("Bruna");
-            nomes.Add("Claudio");
-            nomes.Add("Zeus");
-            nomes.Add("Ana");
-
-            nomes.RemoveAt(nomes.Count - 1);
-
-            nomes.Sort();
-            foreach (var nome in nomes)
+            while (numerosFibo.Count <= 30)
             {
-                Console.WriteLine($"Olá {nome.ToUpper()}");
+            var numeroAnterior1 = numerosFibo[numerosFibo.Count - 1];
+            var numeroAnterior2 = numerosFibo[numerosFibo.Count - 2];
+
+                var item = numeroAnterior1 + numeroAnterior2;
+
+            numerosFibo.Add(item);
+
+                Console.WriteLine(item);
+
             }
 
-            //var index = nomes.IndexOf("Diogo");
-            //Console.WriteLine($"Encontrei o Diogo na posição {index} ");
 
 
         }
