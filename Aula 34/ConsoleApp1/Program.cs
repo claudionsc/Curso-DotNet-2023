@@ -7,11 +7,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var nomes = new List<string> { "<nome>", "Ana", "Felipe " };
+            var nomes = new List<string> { "<nome>", "Ana", "Felipe" };
 
             nomes.Add("Diogo");
             nomes.Add("Maria");
             nomes.Add("Ana");
+
+            nomes.RemoveAt(nomes.Count - 1);
 
             foreach (var nome in nomes)
             {
