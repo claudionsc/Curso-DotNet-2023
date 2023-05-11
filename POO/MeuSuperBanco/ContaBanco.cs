@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,14 +46,30 @@ namespace MeuSuperBanco
 
     public void Depositar(decimal valor, DateTime data, string obs)
     {
+            if (valor <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(valor), "Valor do depósito menor que 1");
+            }
+
             Transacao trans = new Transacao(valor, data, obs);
             todasTransacoes.Add(trans);
     }
 
-    public void Sacar()
+    public void Sacar(decimal valor, DateTime data, string obs)
     {
+            if (valor <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(valor), "Valor do saque menor que 1");
+            }
 
-    }
+            if (Saldo -  valor < 0) 
+            {
+                throw new InvalidOperationException("Operação não permitida");
+            }
+
+            Transacao trans = new Transacao(-valor, data, obs);
+            todasTransacoes.Add(trans);
+        }
 
     }
 }
