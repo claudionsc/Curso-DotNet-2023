@@ -33,7 +33,7 @@ namespace ConsoleApp1
         class Carro
         {
             //construtor, um método que é chamado sempre que a classe
-            //é instanciada
+            //é instanciada, ele sobrescreve a classe
 
             private string nome;
             public Carro(string Nome)
