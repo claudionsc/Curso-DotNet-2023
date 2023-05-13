@@ -64,11 +64,26 @@ namespace MeuSuperBanco
 
             if (Saldo -  valor < 0) 
             {
-                throw new InvalidOperationException("Operação não permitida");
+                throw new InvalidOperationException($"Saldo indisponível. Saque de {valor:C} não realizado");
             }
 
             Transacao trans = new Transacao(-valor, data, obs);
             todasTransacoes.Add(trans);
+        }
+        /* a classe stringbuilder serve para trabalhar com 
+        muitas strings, a fim de melhor performance*/
+        public string PegarMovimentação()
+        {
+            var movimentações = new StringBuilder();
+
+            movimentações.AppendLine("Data\t\tValor\tObs");
+
+            foreach (var item in todasTransacoes)
+            {
+                movimentações.AppendLine($"{item.Data.ToShortDateString()}\t{item.Valor:C}\t{item.Obs}");
+            }
+
+            return movimentações.ToString();
         }
 
     }
