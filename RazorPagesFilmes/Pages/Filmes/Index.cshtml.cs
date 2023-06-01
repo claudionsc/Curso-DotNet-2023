@@ -37,7 +37,7 @@ namespace RazorPagesFilmes.Pages.Filmes
                 {
                     filmes = filmes.Where(f => f.Titulo.Contains(TermoBusca));
                 }
-                Generos = new SelectList(await _context.Filmes.Select(o => o.Genero).ToListAsync());
+                Generos = new SelectList(await _context.Filmes.Select(o => o.Genero).Distinct().ToListAsync());
 
                 Filme = await filmes.ToListAsync();
             }
