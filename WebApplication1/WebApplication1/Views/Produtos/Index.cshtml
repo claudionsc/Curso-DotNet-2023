@@ -1,0 +1,17 @@
+﻿@model List<Produtos>
+
+@{
+    Layout = "_Layout2";
+}
+
+<h1>Index</h1>
+<h2>Estou na página de produto</h2>
+
+@foreach(var produto in Model)
+{
+    <p>@produto.Id</p>
+    <p>@produto.Nome</p>
+    <br />
+}
+
+
