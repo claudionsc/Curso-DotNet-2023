@@ -4,8 +4,17 @@ namespace MVCFilmes.Controllers
 {
     public class FilmesController : Controller
     {
-        public string Index() => "Essa é mimha action padrão";
-        public string BemVindo(string nome) => $"Olá, seja muito bem vindo {nome}";
+        public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult BemVindo(string nome, int id)
+        {
+            ViewData["Title"] = "Bem Vindo!";
+            ViewData["Nome"] = nome;
+            ViewData["Id"] = id;
+            return View();
+        }
     }
 
 }

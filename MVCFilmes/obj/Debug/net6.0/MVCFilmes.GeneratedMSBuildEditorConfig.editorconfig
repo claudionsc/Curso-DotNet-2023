@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Workspace\Projetos em 2023\Curso DotNet\MVCFilmes\MVCFilmes\MVCFilmes
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/Filmes/BemVindo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEJlbVZpbmRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/Filmes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
