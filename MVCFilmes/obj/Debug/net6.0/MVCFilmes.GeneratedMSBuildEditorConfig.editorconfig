@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Workspace\Projetos em 2023\Curso DotNet\MVCFilmes\MVCFilmes\MVCFilmes
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/FilmesA/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzQVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/FilmesA/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzQVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/FilmesA/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzQVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/FilmesA/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzQVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/FilmesA/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzQVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Workspace/Projetos em 2023/Curso DotNet/MVCFilmes/MVCFilmes/MVCFilmes/Views/Filmes/BemVindo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEJlbVZpbmRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
