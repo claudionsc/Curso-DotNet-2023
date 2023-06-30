@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MVCFilmes.Models.Filmes>
+﻿@model MVCFilmes.Models.FilmesViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -12,6 +12,10 @@
 <form asp-controller="FilmesA" asp-action="Index">
     <p>
         <input type="text" name="texto" placeholder="Pesquisar filmes" />
+
+        Gêneros: <select asp-for="Genero" asp-items="Model.Generos">
+            <option value="">Todos</option>
+        </select>
         <input type="submit" value="Pesquisar" />
     </p>
 </form>
@@ -19,22 +23,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Titulo)
+                @Html.DisplayNameFor(model => model.Filmes[0].Titulo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dataLancamento)
+                @Html.DisplayNameFor(model => model.Filmes[0].dataLancamento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Genero)
+                @Html.DisplayNameFor(model => model.Filmes[0].Genero)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Preco)
+                @Html.DisplayNameFor(model => model.Filmes[0].Preco)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Filmes) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Titulo)

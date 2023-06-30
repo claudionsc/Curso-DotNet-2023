@@ -20,16 +20,39 @@ namespace MVCFilmes.Controllers
         }
 
         // GET: FilmesA
-        public async Task<IActionResult> Index(string texto)
+        public async Task<IActionResult> Index(string Texto, string Genero)
         {
+
+            // Query genero
+            IQueryable<string> generos = from m in _context.Filmes
+                                         orderby m.Genero
+                                         select m.Genero;
+            // Query filme
             var filmes = from n in _context.Filmes
-            select n;
-            if (!String.IsNullOrWhiteSpace(texto))
+                            select n;
+
+
+            // Filtro genero
+            if(!string.IsNullOrWhiteSpace(Genero))
             {
-                filmes = filmes.Where(s => s.Titulo!.Contains(texto));
+                filmes = filmes.Where(s => s.Genero == Genero);
             }
+
+            // Filtro filme
+            if (!String.IsNullOrWhiteSpace(Texto))
+            {
+                filmes = filmes.Where(s => s.Titulo!.Contains(Texto));
+            }
+
+            // ViewModel
+            var filmeViewModel = new Models.FilmesViewModel
+            {
+                Filmes = await filmes.ToListAsync(),
+                Generos = new SelectList(await generos.Distinct().ToListAsync())
+            };
+
               return _context.Filmes != null ? 
-                          View(await filmes.ToListAsync()) :
+                          View(filmeViewModel) :
                           Problem("Entity set 'MVCFilmesContext.Filmes'  is null.");
         }
 
