@@ -9,6 +9,12 @@
 <p>
     <a asp-action="Create">Criar um novo</a>
 </p>
+<form asp-controller="FilmesA" asp-action="Index">
+    <p>
+        <input type="text" name="texto" placeholder="Pesquisar filmes" />
+        <input type="submit" value="Pesquisar" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>

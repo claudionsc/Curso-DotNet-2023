@@ -20,13 +20,13 @@ namespace MVCFilmes.Controllers
         }
 
         // GET: FilmesA
-        public async Task<IActionResult> Index(string id)
+        public async Task<IActionResult> Index(string texto)
         {
             var filmes = from n in _context.Filmes
             select n;
-            if (!String.IsNullOrWhiteSpace(id))
+            if (!String.IsNullOrWhiteSpace(texto))
             {
-                filmes = filmes.Where(s => s.Titulo!.Contains(id));
+                filmes = filmes.Where(s => s.Titulo!.Contains(texto));
             }
               return _context.Filmes != null ? 
                           View(await filmes.ToListAsync()) :
