@@ -20,10 +20,16 @@ namespace MVCFilmes.Controllers
         }
 
         // GET: FilmesA
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id)
         {
+            var filmes = from n in _context.Filmes
+            select n;
+            if (!String.IsNullOrWhiteSpace(id))
+            {
+                filmes = filmes.Where(s => s.Titulo!.Contains(id));
+            }
               return _context.Filmes != null ? 
-                          View(await _context.Filmes.ToListAsync()) :
+                          View(await filmes.ToListAsync()) :
                           Problem("Entity set 'MVCFilmesContext.Filmes'  is null.");
         }
 
