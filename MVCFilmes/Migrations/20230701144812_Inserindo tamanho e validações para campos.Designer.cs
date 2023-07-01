@@ -4,6 +4,7 @@ using MVCFilmes.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCFilmes.Migrations
 {
     [DbContext(typeof(MVCFilmesContext))]
-    partial class MVCFilmesContextModelSnapshot : ModelSnapshot
+    [Migration("20230701144812_Inserindo tamanho e validações para campos")]
+    partial class Inserindotamanhoevalidaçõesparacampos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

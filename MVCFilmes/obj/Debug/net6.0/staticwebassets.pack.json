@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Workspace\\Projetos em 2023\\Curso DotNet\\MVCFilmes\\MVCFilmes\\MVCFilmes\\wwwroot\\js\\jsHelperPtBR.js",
+      "PackagePath": "staticwebassets\\js\\jsHelperPtBR.js"
+    },
+    {
       "Id": "C:\\Workspace\\Projetos em 2023\\Curso DotNet\\MVCFilmes\\MVCFilmes\\MVCFilmes\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
