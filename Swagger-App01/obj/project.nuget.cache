@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "byvsN1DCvOqWJNpmPcglGCC56q8ytyMkFNzaZhewQbQwlA35ejRptryQrht+bX/KMaHAMg8onTWElCN+t0k0zg==",
+  "dgSpecHash": "/W0q/arzMRpJwzQtLKmwCiYjvtJBl5t+NGEhP5DI3HsHkI2Ebph5MJ2wOn1eYBFWG1Xg6RA5Go/X3ZaymACmfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\Swagger-App01\\Swagger-App01.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Aerobags\\.nuget\\packages\\flurl\\3.0.7\\flurl.3.0.7.nupkg.sha512",
+    "C:\\Users\\Aerobags\\.nuget\\packages\\flurl.http\\3.2.4\\flurl.http.3.2.4.nupkg.sha512",
     "C:\\Users\\Aerobags\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Aerobags\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Aerobags\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

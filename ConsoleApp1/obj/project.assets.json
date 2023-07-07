@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
+    "net6.0": {
       "Flurl/3.0.7": {
         "type": "package",
         "compile": {
@@ -235,7 +235,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
+    "net6.0": [
       "Flurl >= 3.0.7",
       "Flurl.Http >= 3.2.4"
     ]
@@ -247,11 +247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\Consumidor.API\\Consumidor.API.csproj",
-      "projectName": "Consumidor.API",
-      "projectPath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\Consumidor.API\\Consumidor.API.csproj",
+      "projectUniqueName": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectName": "ConsoleApp1",
+      "projectPath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\Aerobags\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\Consumidor.API\\obj\\",
+      "outputPath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -262,15 +262,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -281,8 +281,8 @@
       }
     },
     "frameworks": {
-      "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Flurl": {
             "target": "Package",
@@ -307,9 +307,6 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"

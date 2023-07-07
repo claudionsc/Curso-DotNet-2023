@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CCpAJMck/EYiXgiCmxdSzkP8UT/AQqvuso8JgKtkpwuxO0s6p8yoOcnXVoFP88MQ6iZNLnMkipReIlwR+EZGyQ==",
+  "dgSpecHash": "r3Ptg5k5BFrKSjqaI2iU8f81P323Y6E8U38g7GZu70nXTe6d3lqL+yn1+n6O4cQipuZiW6F0Iaz4deCBmroBgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\Consumidor.API\\Consumidor.API.csproj",
+  "projectFilePath": "C:\\Users\\Aerobags\\source\\repos\\Swagger-App01\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aerobags\\.nuget\\packages\\flurl\\3.0.7\\flurl.3.0.7.nupkg.sha512",
     "C:\\Users\\Aerobags\\.nuget\\packages\\flurl.http\\3.2.4\\flurl.http.3.2.4.nupkg.sha512",
