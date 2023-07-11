@@ -2,6 +2,7 @@
 using ConsoleApp1;
 using Flurl;
 using Flurl.Http;
+using System.Collections.Generic;
 using System.Runtime.Versioning;
 
 Console.WriteLine("Hello, World!");
@@ -27,8 +28,18 @@ Thread.Sleep(new TimeSpan(0, 0, 5));
 
 
 //flurl -  Funciona mais ou menos como Axios
+// POST
 endpoint.PostJsonAsync(tarefa1);
 endpoint.PostJsonAsync(tarefa2);
+
+// GET
+IEnumerable<Item> listaTarefas = await endpoint.GetJsonAsync<IEnumerable<Item>>();
+
+foreach(Item item in listaTarefas)
+{
+    var finalizada = item.Finalizado == true ? "finalizada" : "não finalizada";
+    Console.WriteLine($"A tarefa {item.Nome} está {finalizada}");
+}
 
 Console.WriteLine("Aperte qualquer tecla para finalizar a aplicação!");
 
