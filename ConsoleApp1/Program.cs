@@ -72,6 +72,7 @@ foreach (Item item in listaTarefas)
 Console.WriteLine($"DELETAR. INSERIR ID ===========");
 
 string endpoint_deletar = url + $"api/TarefaItems/2";
+await endpoint_deletar.DeleteAsync();
 
 listaTarefas = await endpoint.GetJsonAsync<IEnumerable<Item>>();
 foreach (Item item in listaTarefas)
